@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="27dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <!-- Date Input -->
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/enter_date_e_g_2025_06_04"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <!-- Minutes Played -->
+        <EditText
+            android:id="@+id/etMinutes"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginBottom="12dp"
+            android:hint="Minutes Been Played"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <!-- Game Genre Spinner -->
+        <Spinner
+            android:id="@+id/spinnerGenre"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_marginBottom="12dp"
+            android:minHeight="48dp" />
+
+        <!-- Rating Spinner -->
+        <Spinner
+            android:id="@+id/spinnerRating"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_marginBottom="20dp"
+            android:minHeight="48dp" />
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btnAddEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/add_entry"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnClearInputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/clear_inputs"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnGoToDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_details"
+            tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+</ScrollView>

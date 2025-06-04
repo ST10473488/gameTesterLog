@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GameTesterLog</string>
+    <string name="add_entry">Add Entry</string>
+    <string name="clear_inputs">Clear Inputs</string>
+    <string name="go_to_details">Go to Details</string>
+    <string name="enter_date_e_g_2025_06_04">Enter Date (e.g., 2025-06-04)</string>
+</resources>
